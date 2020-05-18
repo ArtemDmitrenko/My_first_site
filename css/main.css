@@ -1,0 +1,226 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #201b2d;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.header {
+    background: rgba(78,192,254,1);
+    background: -moz-linear-gradient(left, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(78,192,254,1)), color-stop(100%, rgba(55,144,217,1)));
+    background: -webkit-linear-gradient(left, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -o-linear-gradient(left, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -ms-linear-gradient(left, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: linear-gradient(to right, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ec0fe', endColorstr='#3790d9', GradientType=1 );
+    /* border: 1px solid black; */
+    padding-top: 60px;
+    padding-bottom: 100px;
+    color: white;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer {
+    /* border: 1px solid blanchedalmond; */
+    margin-top: 140px;
+}
+
+.desktop {
+    /* border: 1px solid rgb(211, 255, 205); */
+    right: -60px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 37px;
+}
+
+.title span {
+    font-size: 59px;
+}
+
+.intro {
+    /* border: 1px solid red; */
+    margin: 30px 0 40px 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 400px;
+    line-height: 1.8em;
+}
+
+.btn {  
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    background: #ffd429;
+    color: black;
+    padding: 20px 0;
+    width: 220px; 
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: #d9860e;
+}
+
+.expectation__title {
+    font-size: 30px;
+    font-weight: bold;
+    /* border: 1px solid red; */
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.expectation {
+    padding-top: 95px;
+    padding-bottom: 120px;
+    /* border: 1px solid red; */
+}
+
+.pluses {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plus {
+    width: 300px;
+    background: url("../img/icon1.jpg") no-repeat center top;
+    padding-top: 90px;
+    text-align: center;
+}
+
+.plus__title {
+    font-size: 19px; 
+}
+
+.plus__text {
+    margin-top: 10px;
+}
+
+.plus_travel {
+    background: url("../img/icon2.jpg") no-repeat center top;
+}
+
+.plus_cost {
+    background: url("../img/icon3.jpg") no-repeat center top;
+}
+
+div .pluses {
+    line-height: 1.5em;
+}
+
+.form {
+    padding-top: 85px;
+    padding-bottom: 95px;
+    /* border: 1px solid blue; */
+    background: #ecf3f8;
+}
+
+form {
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    width: 340px;
+    height: 45px;
+    display: block;
+    margin: 0 auto 16px auto;
+    border: 1px solid #bbbbbb;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+
+.btn_center {
+    margin: 20px auto 0;
+    box-sizing: border-box;
+    width: 340px;
+    border: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 65px 0;
+    background: #164d7a;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsive
+Диапозоны взяты с Bootstrap*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .intro {
+        width: 100%;
+    }
+    .desktop {
+        width: 641px;
+        margin: 50px auto 0 auto;
+        right: 0;
+        display: block;
+    }
+    .pluses {
+        flex-direction: column;
+    }
+    .plus {
+        width: auto;
+        margin-bottom: 20px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    } 
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .desktop {
+        width: 100%;
+    }
+}
+
+/* 0px - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    input {
+        width: 100%;
+    }
+    .btn_center {
+        width: 100%;
+    }
+}
