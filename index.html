@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Домашнее задание</title>
 </head>
 <body>
     <header id="header" class="header">
         <div class="container">
-            <img src="img/logo.png" alt="WayUp" class="logo">
+            <img src="img/logo.png" alt="WayUp" class="logo animated fadeInDown">
             <div class="wrapper">
-                <div class="offer">
+                <div class="offer animated fadeInLeft">
                     <h1 class="title">
                         С помощью верстки я создам ту жизнь, о которой <span>мечтаю!</span>
                     </h1>
@@ -23,15 +24,15 @@
                         Двигаться к мечте!
                     </a>
                 </div>
-                <img src="img/desktop.png" alt="Desktop" class="desktop">
+                <img src="img/desktop.png" alt="Desktop" class="desktop animated fadeInRight">
             </div>
         </div>
     </header>
     <section id="expectation" class="expectation">
         <div class="container">
-            <h2 class="expectation__title">Что меня ждет впереди</h2>
+            <h2 id="title" class="expectation__title animated">Что меня ждет впереди</h2>
             <div class="pluses">
-                <div class="plus">
+                <div class="plus plus__time animated">
                     <h3 class="plus__title">
                         Свободное время
                     </h3>
@@ -39,7 +40,7 @@
                         Мне нужно свободное время на семью и самое настоящее
                     </p>
                 </div>
-                <div class="plus plus_travel">
+                <div class="plus plus_travel animated">
                     <h3 class="plus__title">
                         Яркие путешествия
                     </h3>
@@ -47,7 +48,7 @@
                         Работать откуда угодно - что может быть лучше?
                     </p>
                 </div>
-                <div class="plus plus_cost">
+                <div class="plus plus_cost animated">
                     <h3 class="plus__title">
                         Создание ценности
                     </h3>
@@ -77,5 +78,7 @@
             <p>© Все мои мечты защищены моим трудолюбием</p>
         </div>
     </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
